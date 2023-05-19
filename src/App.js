@@ -1,12 +1,14 @@
+import React from 'react';
+import { BrowserRouter, Routes,  Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import Playlist from ".components/Playlist";
+import Body from "./components/Body";
+import './Style.css';
 
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
-      <div className="btn btn-sm btn-danger ms-5">come</div>
+    <div style={{backgroundColor:"#000"}}>
+      <Navbar />
+      <Body />
     </div>
   );
 }
