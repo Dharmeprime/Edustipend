@@ -6,10 +6,14 @@ import './Style.css';
 
 function App() {
   return (
-    <div style={{backgroundColor:"#000"}}>
-      <Navbar />
-      <Body />
-    </div>
+    
+      <BrowserRouter>
+        <Routes>            
+           <Route path='/' element={<Body />} />
+        </Routes> 
+      </BrowserRouter>
+      
+    
   );
 }
 
